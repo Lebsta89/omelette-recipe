@@ -1,0 +1,276 @@
+:root {
+    /* COLORS */
+    --white-- : hsl(0, 0%, 100%);
+    --Stone-100--: hsl(30, 54%, 90%);
+    --Stone-150--: hsl(30, 18%, 87%);
+    --Stone-600--: hsl(30, 10%, 34%);
+    --Stone-900--: hsl(24, 5%, 18%);
+
+    --Brown-800--: hsl(14, 45%, 36%);
+
+    --Rose-800--: hsl(332, 51%, 32%);
+    --Rose-50--: hsl(330, 100%, 98%);
+
+    /* Typography */
+    /* fonts */
+    --font-header--: "Young Serif", serif;
+    --font--main--: "Outfit", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: var(--font--main--);
+}
+
+.hero-section img {
+    width: 100%;
+    height: 100%;
+}
+
+/* INTRO SECTION */
+.preparation h1 {
+    font-family: var(--font-header--);
+    font-size: 1.5rem;
+    margin: 20px 30px;
+}
+
+.preparation p {
+    padding: 10px 30px;
+}
+
+/* PREPARATION TIME SECTION */
+.preparation-time {
+    background-color: var(--Rose-50--);
+    margin: 20px 30px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.preparation-time h3 {
+    color: var(--Rose-800--);  
+}
+
+.preparation-time ul {
+    margin: 10px 30px;
+}
+
+.preparation-time li {
+    padding: 10px;
+    color: black;
+}
+
+.preparation-time span {
+    font-weight: bold;
+}
+
+/*THE INGREDIENTS  SECTION*/
+.ingredients {
+    margin: 20px 30px;
+}
+
+.ingredients h2 {
+    font-family: var(--font-header--);
+    font-size: 1.8rem;
+    color: var(--Brown-800--);
+    margin: 15px 0;
+}
+
+.ingredients ul {
+    margin: 20px 30px;
+}
+
+.ingredients li {
+    padding: 10px;
+}
+
+.divider {
+    margin: 20px 30px;
+    border:  1px solid rgba(128, 128, 128, 0.5);
+}
+
+/* THE INSTRUCTIONS SECTION */
+.instructions, .nutrition {
+    margin: 20px 20px;
+    padding: 20px;
+}
+
+.instructions h2 {
+  font-family: var(--font-header--);
+  color: var(--Brown-800--);
+  font-size: 1.8rem;
+  margin: 15px 0;
+}
+
+.instructions ol {
+    margin: 10px 30px;
+}
+
+.instructions li {
+    padding: 10px 0;
+}
+
+.instructions span {
+    font-weight: 600;
+}
+
+/* NUTRITON SECTION */
+
+.nutrition h2 {
+    font-family: var(--font-header--);
+    color: var(--Brown-800--);
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.nutrition p {
+   margin-bottom: 10px; 
+}
+
+.nutri-container p{
+   display: flex;
+   justify-content:space-between;
+   margin: 20px 60px;
+}
+
+.nutrition span {
+    color: var(--Brown-800--);
+    font-weight: 600;
+
+}
+
+.line {
+     border:  1px solid rgba(128, 128, 128, 0.5);
+}
+
+/* footer */
+.attribution {
+     font-size: 15px; 
+     text-align: center;
+     background-color: #000;
+     padding: 30px; 
+    
+    }
+
+.attribution p {
+    color: var(--white--);
+    display: inline-block;
+}
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+    }
+
+    /* RESPONSIVE TABLETS CODE*/
+@media (min-width: 768px)  and (max-width: 890px){
+    body {
+        background-color: var(--Stone-100--);
+    }
+
+    .hero-section img {
+     border-radius: 20px;
+     padding: 20px 30px;
+     border-radius: 40px;
+    }
+
+    .preparation h1 {
+        font-size: 2rem;
+    }
+
+   .main-section {
+    margin: 100px 150px;
+    background-color: var(--white--);
+    border-radius: 30px;
+   }
+
+   .nutri-container p{
+    display: flex;
+    justify-content: left;
+    margin: 20px 20px; 
+    position: relative;
+  }
+
+  .nutri-container span {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 250px;
+  }
+    
+} 
+
+@media(min-width: 1114px) and (max-width: 1280px) {
+    body {
+        background-color: var(--Stone-100--);
+    }
+
+    .hero-section img {
+     border-radius: 20px;
+     padding: 20px 30px;
+     border-radius: 40px;
+    }
+
+    .preparation h1 {
+        font-size: 2rem;
+    }
+
+   .main-section {
+    margin: 100px 370px;
+    background-color: var(--white--);
+    border-radius: 30px;
+   }
+
+   .nutri-container p{
+    display: flex;
+    justify-content: left;
+    margin: 20px 20px; 
+    position: relative;
+  }
+
+  .nutri-container span {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 200px;
+  }
+}
+
+@media(min-width: 1281px) and (max-width: 1728px) {
+    body {
+        background-color: var(--Stone-100--);
+    }
+
+    .hero-section img {
+     border-radius: 20px;
+     padding: 20px 30px;
+     border-radius: 40px;
+    }
+
+    .preparation h1 {
+        font-size: 2rem;
+    }
+
+   .main-section {
+    margin: 100px 500px;
+    background-color: var(--white--);
+    border-radius: 30px;
+   }
+
+   .nutri-container p{
+    display: flex;
+    justify-content: left;
+    margin: 20px 20px; 
+    position: relative;
+  }
+
+  .nutri-container span {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 200px;
+  }
+}
